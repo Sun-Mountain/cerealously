@@ -1,13 +1,12 @@
-const cerealPost = require('../models/cereal_post')
+const Cereal = require('../models/Cereal')
 
 module.exports = {
     index: (req, res) => {
-        cerealPost.find({})
+        Cereal.find({})
         .sort({ createdAt: -1 })
-        .limit(5)
-        .populate("user")
-        .then(cereal_posts => {
-            res.render("app/index", {cereal_posts})
+        .limit(7)
+        .then(cereals => {
+            res.render("app/index", { cereals })
         })
     }
 }

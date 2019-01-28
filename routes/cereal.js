@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const cerealController = require('../controllers/cereal_post')
+const cerealController = require('../controllers/cereal')
 
 router.get('/:id', cerealController.show)
 

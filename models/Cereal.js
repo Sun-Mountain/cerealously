@@ -1,16 +1,16 @@
 const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 
-const cereal_post = new Schema({
-    title: String,
+const Cereal = new Schema({
+    name: String,
     brand: String,
+    picture: String,
+    milkType: String,
     createdAt: {
         type: Date,
         default: Date.now()
     },
-    milkType: String,
-    review: String, 
-    url: String
+    review: String
 })
 
-module.exports = mongoose.model("cereal_post", cereal_post)
+module.exports = mongoose.model("Cereal", Cereal)
