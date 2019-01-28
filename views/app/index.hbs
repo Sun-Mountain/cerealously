@@ -1,0 +1,42 @@
+{{#if cereals}}
+<ul class="cereals">
+    {{#each cereals}}
+        <li>
+            <div class="card">
+                <div class="date">
+                    {{ createdAt }}
+                </div>
+                <div class="picture">
+                    <img src="{{ picture }}" class="box">
+                </div>
+                <div class="text">
+                    <div class="name inline">
+                        <b>Name</b>: {{ name }}
+                    </div>
+                    <div class="brand inline">
+                        <b>Brand</b>: {{ brand }}
+                    </div>
+                    <div class="milk inline">
+                        <b>Milk used</b>: {{ milkType }} milk
+                    </div>
+                    <div class="review inline">
+                        <b>Review</b>: {{ review }}
+                    </div>
+                </div>
+                <div class="buttons">
+                <div>
+                    <form method="GET" action="/recipe/{{id}}/edit" class="recipe-form">
+                        <input type="submit" value='Update' class='btn-cereal'>
+                    </form>
+                </div>
+                <div>
+                    <form method="POST" action="/recipe/{{id}}?_method=DELETE" class="recipe-form">
+                        <input type="submit" value='Delete' class='btn-cereal'>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </li>
+    {{/each}}
+</ul>
+{{/if}}
