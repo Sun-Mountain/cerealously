@@ -13,6 +13,15 @@ module.exports = {
             res.redirect(`cereal/${cereal._id}`)
         })
     },
+    edit: (req, res) => {
+        res.render('cereal/edit', {id: req.params.id})
+    },
+    delete: (req, res) => {
+        Cereal.findOneAndRemove({ _id: req.params.id })
+        .then( () => {
+            res.redirect('/')
+        })
+    },
     new: (req, res) => {
         res.render('cereal/new')
     },
@@ -23,10 +32,11 @@ module.exports = {
             res.render("cereal/show", { cereal })
         })
     },
-    delete: (req, res) => {
-        Cereal.findOneAndRemove({ _id: req.params.id })
-        .then( () => {
-            res.redirect('/')
-        })
+    update: (req, res) => {
+        let { review } = req.body.cereal
+        Cereal.findOneAndUpdate(
+            { _id: req.params.id}, 
+            {$set:{review:review}})
+        .then(() => {res.redirect('/')})
     }
 }

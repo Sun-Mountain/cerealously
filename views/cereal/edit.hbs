@@ -1,0 +1,14 @@
+<div class="container">
+    <h3>Fix It</h3>
+    <div class="form-container">
+        <form method="POST" action="/cereal/{{id}}?_method=PATCH">
+            <p class="input-field">
+                <b>Review</b>:<br>
+                <textarea name="cereal[review]" cols="60" rows="10" placeholder="What did you think? General thoughts, flavor, mouth feel, etc."></textarea>
+            </p>
+            <p class='input-field'>
+                <input type="submit" value='Submit' class='btn-cereal'>
+            </p>
+        </form>
+    </div>
+</div>
