@@ -1,26 +1,26 @@
 {{#if cereal}}
-<div class="card">
+<div class="container card cereals show">
     <div class="date">
-        {{ createdAt }}
+        {{ cereal.createdAt }}
     </div>
     <div class="picture">
-        <img src="{{ picture }}" class="box">
+        <img src="{{ cereal.picture }}" class="box">
     </div>
     <div class="text">
         <div class="name inline">
-            <b>Name</b>: {{ name }}
+            <b>Name</b>: {{ cereal.name }}
         </div>
         <div class="brand inline">
-            <b>Brand</b>: {{ brand }}
+            <b>Brand</b>: {{ cereal.brand }}
         </div>
         <div class="milk inline">
-            <b>Milk used</b>: {{ milkType }} milk
+            <b>Milk used</b>: {{ cereal.milkType }} milk
         </div>
         <div class="review inline">
-            <b>Review</b>: {{ review }}
+            <b>Review</b>: {{ cereal.review }}
         </div>
     </div>
-    <div class="buttons">
+    <div class="buttons show">
     <div>
         <form method="GET" action="/cereal/{{id}}/edit" class="cereal-form">
             <input type="submit" value='Update' class='btn-cereal'>
@@ -32,5 +32,5 @@
         </form>
     </div>
     </div>
-</div>
+
 {{/if}}
