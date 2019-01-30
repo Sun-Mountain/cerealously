@@ -13,12 +13,6 @@ module.exports = {
             res.redirect(`cereal/${cereal._id}`)
         })
     },
-    comment: (req, res) => {
-        Cereal.findOne({ _id: req.params.id })
-        .then(cereal => {
-            res.render("cereal/comment", { cereal })
-        })
-    },
     edit: (req, res) => {
         res.render('cereal/edit', {id: req.params.id})
     },
@@ -34,7 +28,6 @@ module.exports = {
     show: (req, res) => {
         Cereal.findOne({ _id: req.params.id })
         .then(cereal => {
-            console.log(cereal)
             res.render("cereal/show", { cereal })
         })
     },

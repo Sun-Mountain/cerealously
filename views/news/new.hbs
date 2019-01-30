@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Got News?</h3>
+    <div class="form-container">
+        <form action="/news" method="POST">
+            <p class="input-field">
+                <b>Title</b>:<br>
+                <textarea name="news[title]" cols="60" rows="1" placeholder="Frosted Flakes, Chex, etc."></textarea>
+            </p>
+            <p class="input-field">
+                <b>Author</b>: (name)<br>
+                <textarea name="news[author]" cols="60" rows="1" placeholder="General Mills, Kellogs, etc"></textarea>
+            </p>
+            <p class="input-field">
+                <b>Picture</b>:<br>
+                <textarea name="news[picture]" cols="60" rows="1" placeholder="url"></textarea>
+            </p>
+            <p class="input-field">
+                <b>Content</b>: (news story)<br>
+                <textarea name="news[content]" cols="60" rows="10" placeholder="What did you think? General thoughts, flavor, mouth feel, etc."></textarea>
+            </p>
+            <p class='input-field'>
+                <input type="submit" value='Submit' class='btn-cereal'>
+            </p>
+        </form>
+    </div>
+</div>

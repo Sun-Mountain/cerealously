@@ -1,0 +1,20 @@
+{{#if news}}
+    <ul class="news">
+        {{#each news}}
+        <li>
+            <div class="title">
+                {{ title }}
+            </div>
+            <div class="author">
+                {{ author }}
+            </div>
+            <div class="at">
+                {{ createdAt }}
+            </div>
+            <div class="news-content">
+                {{ content }}
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
