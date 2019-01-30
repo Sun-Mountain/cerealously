@@ -37,6 +37,7 @@ a {
 .box {
     border-radius: 50%;
     height: auto;
+    margin: 0 0 15px 0;
     width: 100%;
 }
 
@@ -52,16 +53,22 @@ a {
     border: 1px solid #bc5a25;
 }
 
+.btn-cereal:hover {
+    background-color: #bc5a25;
+    color: #ffffff;
+}
+
 .card {
+    background-color: #FDFEC1;
+    border-radius: 15px;
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: 25px auto 25px;
+    margin: 0 0 25px 0;
     padding: 10px 25px;
 }
 
 .cereals {
-    background-color: #FDFEC1;
-    border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     padding: 0 0 15px 0;

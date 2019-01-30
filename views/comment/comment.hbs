@@ -27,11 +27,6 @@
         </form>
     </div>
     <div>
-        <form method="GET" action="/cereal/{{id}}/comment">
-            <input type="submit" value='Comment' class='btn-cereal'>
-        </form>
-    </div>
-    <div>
         <form method="POST" action="/cereal/{{id}}?_method=DELETE">
             <input type="submit" value='Delete' class='btn-cereal'>
         </form>
@@ -39,3 +34,18 @@
     </div>
 </div>
 {{/if}}
+
+<div class="container">
+    <h3>Comment</h3>
+    <div class="form-container">
+        <form method="POST" action="/cereal/{{id}}?_method=PATCH">
+            <p class="input-field">
+                <b>Comment</b>:<br>
+                <textarea name="cereal[review]" cols="60" rows="10" placeholder="What did you think? General thoughts, flavor, mouth feel, etc."></textarea>
+            </p>
+            <p class='input-field'>
+                <input type="submit" value='Submit' class='btn-cereal'>
+            </p>
+        </form>
+    </div>
+</div>

@@ -24,16 +24,21 @@
                     </div>
                 </div>
                 <div class="buttons">
-                <div>
-                    <form method="GET" action="/cereal/{{id}}/edit">
-                        <input type="submit" value='Update' class='btn-cereal'>
-                    </form>
-                </div>
-                <div>
-                    <form method="POST" action="/cereal/{{id}}?_method=DELETE">
-                        <input type="submit" value='Delete' class='btn-cereal'>
-                    </form>
-                </div>
+                    <div>
+                        <form method="GET" action="/cereal/{{id}}/edit">
+                            <input type="submit" value='Update' class='btn-cereal'>
+                        </form>
+                    </div>
+                    <div>
+                        <form method="GET" action="/comment/{{id}}">
+                            <input type="submit" value='Comment' class='btn-cereal'>
+                        </form>
+                    </div>
+                    <div>
+                        <form method="POST" action="/cereal/{{id}}?_method=DELETE">
+                            <input type="submit" value='Delete' class='btn-cereal'>
+                        </form>
+                    </div>
                 </div>
             </div>
         </li>

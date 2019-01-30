@@ -4,12 +4,12 @@ const Schema = mongoose.Schema
 const Cereal = new Schema({
     name: String,
     brand: String,
-    picture: String,
-    milkType: String,
     createdAt: {
         type: Date,
         default: Date.now()
     },
+    milkType: String,
+    picture: String,
     review: String
 })
 
