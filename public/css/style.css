@@ -202,6 +202,7 @@ textarea {
 
 footer {
     background-color: #FFCFAD;
+    border-top: 2px solid #bc5a25;
     bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
