@@ -12,4 +12,8 @@ app.use(express.static("public"))
 
 app.use(require("./routes/index.js"))
 
-app.listen(1776, () => console.log("new york city"))
+app.set('port', process.env.PORT || 3001)
+
+app.listen((app.get('port'), () => {
+    console.log(`✅ PORT: ${app.get('port')} 🌟`)
+  }))
