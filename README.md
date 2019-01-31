@@ -43,11 +43,43 @@ __Extras:__
 One piece of advice for planning our projects was to make another version of an existing website. On of my favorite websites/apps is <a href="https://www.goodreads.com/">Goodreads</a>, a social media for books: what you're currently reading and your progress, what you have read and your ratings/reviews, and what you want to read. That's the basic gist of it anyway.
 
 ## Technology Used
+:arrow_right: Express
 
-## Approach Taken
+:arrow_right: Handlebars
+
+:arrow_right: HTML & CSS
+
+:arrow_right: Javascript
+
+:arrow_right: JSON
+
+:arrow_right: MongoDB & Mongoose
+
+
+## Installation Instructions
+__Dependencies Used:__
+
+:arrow_right: body-parser
+
+:arrow_right: express
+
+:arrow_right: hbs
+
+:arrow_right: method-override
+
+:arrow_right: mongoose
 
 ## Use The App
 
 ## Unsolved Problems
 
 ## For The Future
+:o: Add user authentication.
+
+:o: Create a real logo for the app.
+
+:o: Adjust layout colors.
+
+:o: Convert CSS to SASS.
+
+:o: Add star rating stystem for cereals.
