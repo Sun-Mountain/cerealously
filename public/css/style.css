@@ -46,6 +46,10 @@ a:hover {
     text-decoration: none;
 }
 
+.logo:hover {
+    color: #FFFFFF !important;
+}
+
 .navbar {
     background-color: #FFCFAD;
     display: flex;
@@ -159,7 +163,7 @@ h3 {
 }
 
 .news-picture {
-    width: 200px;
+    width: 100%;
     height: auto;
     overflow: hidden;
 }
@@ -202,4 +206,25 @@ footer {
     position: relative;
     text-align: center;
     width: 100%;
+}
+
+@media screen and (max-width:480px) {
+    .body-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        width: 100% !important;
+    }
+
+    .news-picture {
+        align-items: center;
+        width: 50%;
+        height: auto;
+    }
 }
