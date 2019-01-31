@@ -1,5 +1,7 @@
 # Cerealously
 
+![ScreenShot](./planning/cereal_screenshot.png)
+
 ## What Is This?
 
 __Requirements:__
