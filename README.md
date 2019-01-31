@@ -18,6 +18,7 @@ __Requirements:__
 
 :ballot_box_with_check: Demonstrate a good commit history.
 
+
 __Bonuses:__
 
 :x: Nest one of your resources inside another one using subdocuments.
@@ -32,11 +33,14 @@ __Bonuses:__
 
 :x: Allow users to upload images to your application, and persist these images.
 
+
 __Extras:__
 
 :ballot_box_with_check: Mobile responsive.
 
 ## Conception & Planning
+
+One piece of advice for planning our projects was to make another version of an existing website. On of my favorite websites/apps is <a href="https://www.goodreads.com/">Goodreads</a>, a social media for books: what you're currently reading and your progress, what you have read and your ratings/reviews, and what you want to read. That's the basic gist of it anyway.
 
 ## Technology Used
 
