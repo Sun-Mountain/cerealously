@@ -3,6 +3,7 @@
 ![ScreenShot](./planning/cereal_screenshot.png)
 
 ## What Is This?
+An app to review cereal brands & for breaking news of a balanced breakfast.
 
 __Requirements:__
 
