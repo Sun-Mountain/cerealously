@@ -90,3 +90,4 @@ __Reach Goals__
 :o: Find & connect to a cereal/grocery API so that people could just search for and pick out the cereals so they don't have to hunt down the information/facts. Then I could theoretically include health information as well.
 
 ## Credits
+Thank you to Stuart Fooks, Rendon Elsessor, Roger Campbell II, Lindsay Urchyk, and Fathia Mohammed for their help in the creation and deployment of this app.
