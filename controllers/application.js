@@ -9,7 +9,7 @@ module.exports = {
             .then(cereals => {
                 News.find({})
                 .sort({ createdAt: -1 })
-                .limit(2)
+                .limit(1)
                 .then(news => {
                     res.render("app/index", { cereals, news })
             })
