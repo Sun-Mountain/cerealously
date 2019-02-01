@@ -14,8 +14,10 @@ module.exports = {
         })
     },
     edit: (req, res) => {
-        res.render('cereal/edit', {id: req.params.id})
-    },
+        Cereal.findOne({_id: req.params.id})
+        .then(cereal => {
+        res.render('cereal/edit', { cereal })}
+    )},
     delete: (req, res) => {
         Cereal.findOneAndRemove({ _id: req.params.id })
         .then( () => {
@@ -32,10 +34,16 @@ module.exports = {
         })
     },
     update: (req, res) => {
-        let { review } = req.body.cereal
         Cereal.findOneAndUpdate(
             { _id: req.params.id}, 
-            {$set:{review:review}})
-        .then(() => {res.redirect('/')})
+//if doesn't work try cereal.$.tag
+            {$set:{
+                name: req.body.cereal.name,
+                brand: req.body.cereal.brand,
+                milkType: req.body.cereal.milkType,
+                review: req.body.cereal.review
+            }}
+            )
+        .then(cereal => {res.redirect('/')})
     },
 }

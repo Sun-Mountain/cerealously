@@ -1,16 +1,32 @@
 <div class="container">
     <h3>Fix It</h3>
+    {{#if cereal}}
+        {{#with cereal}}
     <div class="form-container">
         <form method="POST" action="/cereal/{{id}}?_method=PATCH">
             <p class="input-field">
+                <b>Name</b>:<br>
+                <textarea name="cereal[name]" cols="60" rows="1" placeholder="Frosted Flakes, Chex, etc.">{{name}}</textarea>
+            </p>
+            <p class="input-field">
+                <b>Brand</b>:<br>
+                <textarea name="cereal[brand]" cols="60" rows="1" placeholder="General Mills, Kellogs, etc">{{brand}}</textarea>
+            </p>
+            <p class="input-field">
+                <b>Milk</b>:<br>
+                <textarea name="cereal[milkType]" cols="60" rows="1" placeholder="2%, fat free, almond, none, etc.">{{milkType}}</textarea>
+            </p>
+            <p class="input-field">
                 <b>Review</b>:<br>
-                <textarea name="cereal[review]" cols="60" rows="10" placeholder="What did you think? General thoughts, flavor, mouth feel, etc."></textarea>
+                <textarea name="cereal[review]" cols="60" rows="10" placeholder="What did you think? General thoughts, flavor, mouth feel, etc.">{{review}}</textarea>
             </p>
             <p class='input-field'>
                 <input type="submit" value='Submit' class='btn-cereal'>
             </p>
         </form>
     </div>
+    {{/with}}
+    {{/if}}
 </div>
 
 
