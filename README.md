@@ -88,3 +88,5 @@ Without user authentication it is even easier to spam/break this app. User authe
 
 __Reach Goals__
 :o: Find & connect to a cereal/grocery API so that people could just search for and pick out the cereals so they don't have to hunt down the information/facts. Then I could theoretically include health information as well.
+
+## Credits
